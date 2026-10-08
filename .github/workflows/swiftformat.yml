@@ -1,0 +1,19 @@
+# This workflow will run SwiftFormat on a Swift project
+
+name: Swift Format
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  format:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Run SwiftFormat
+        run: swiftformat --lint . --reporter github-actions-log
