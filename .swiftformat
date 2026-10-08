@@ -1,0 +1,45 @@
+--language-mode 6
+--indent 4
+--max-width 120
+
+--import-grouping access-control
+--import-grouping alpha
+--import-grouping testable-last
+
+--ranges no-space
+
+--complex-attributes prev-line
+--computed-var-attributes prev-line
+--func-attributes prev-line
+--stored-var-attributes same-line
+--type-attributes prev-line
+
+--ifdef noindent
+
+--wrap-arguments preserve
+--wrap-collections before-first
+--wrap-conditions after-first
+--wrap-effects if-multiline
+--wrap-enum-cases always
+--wrap-parameters preserve
+--wrap-return-type if-multiline
+--wrap-ternary before-operators
+--wrap-type-aliases after-first
+--allow-partial-wrapping false
+
+--enable blockComments
+--enable emptyExtensions
+--enable isEmpty
+--enable noGuardInTests
+--enable preferContains
+--enable preferCountWhere
+--enable preferFirstWhere
+--enable preferFlatMap
+--enable preferMinOverSorted
+--enable preferSwiftTesting
+--enable privateStateVariables
+--enable singlePropertyPerLine
+--enable sortSwitchCases
+--enable testSuiteAccessControl
+--enable urlMacro
+--enable validateTestCases
